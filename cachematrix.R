@@ -4,11 +4,16 @@
 
 # The following functions follow the same logic as the makeVector and cachemean
 # functions presented in the Programming Assignment 2: Lexical Scoping
-# instructions. The two main differences are that these functions are specific
-# to matrices and use the solve function to find the inverse. makeCacheMatrix
-# sets and gets the value of the matrix and its inverse. cacheSolve checks and
-# retrieves the inverse if it has already been cached. If not, it will go ahead
-# and solve for the inverse matrix.
+# instructions (citaion below). The main differences are that my functions are
+# specific to matrices and use the solve function to find the inverse.
+# makeCacheMatrix sets and gets the value of the matrix and its inverse.
+# cacheSolve retrieves the inverse if it has already been cached. If not, it
+# solves for the inverse matrix.
+
+# Works Cited: 
+# R Peng, J Leek, B Caffo (John Hopkins University & Coursera, 2017)
+# Programming Assignment 2: Lexical Scoping
+# https://www.coursera.org/learn/r-programming/peer/tNy8H/programming-assignment-2-lexical-scoping
 
 # Creates a matrix (actually a list of functions) that caches its inverse
 makeCacheMatrix <- function(x = matrix()) {
